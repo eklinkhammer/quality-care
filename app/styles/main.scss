@@ -89,3 +89,103 @@ body {
     border-bottom: 0;
   }
 }
+
+
+// Custom header CSS
+.header #picture-title {
+  display: table;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.header #fancy-title {
+  float: left;
+  height: 100%;
+  width: 75%;
+}
+
+
+.header #buffer {
+  height: 10%;
+  width: 100%;
+}
+
+.header #main-title {
+  height: 50%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.header h1 {
+  padding-left: 20px;
+  text-align: left;
+  font-size:50px;
+}
+
+.header #subtitle {
+  height: 35%;
+  width: 100%;
+}
+
+.header h2 {
+  padding-left: 20px;
+  text-align: left;
+}
+
+.body .prof-images {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 5px;
+}
+
+.body .prof-images .prof-image {
+  float: left;
+  width: 25%; 
+  align-items: center;
+  justify-content: center;
+}
+
+.body .prof-images .prof-image .a .img {
+  display: block;
+  margin: auto;
+}
+
+.about-body {
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+}
+
+.about-section {
+  clear:both;
+  width: 100%;
+}
+
+.about-section .about-img {
+  width: 30%;
+  float: left;
+  padding: 10px;
+}
+
+.about-section .about-txt {
+  width: 60%;
+  float: left;
+  padding: 10px;
+}
+
+.navbar-brand
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin:0 auto;
+}
+.navbar-toggle {
+    z-index:3;
+}

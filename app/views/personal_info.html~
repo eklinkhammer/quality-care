@@ -1,5 +1,5 @@
 <div>
-  <h2> Welcome to Quality Care. </h2>
+  <h2> Personal Information Form </h2>
 </div>
 
 <nav class="navbar navbar-default" role="navigation">
@@ -7,14 +7,14 @@
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
     </button>    
   </div>
   <div class="navbar-collapse collapse">
+    <ul class="nav navbar-nav navbar-left">
+      <li><a href="#">Restart</a></li>
+    </ul>
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="#!/language">Language Selection</a></li>
+      <li><a href="#!/language">Begin Medical History</a></li>
     </ul>
   </div>
 </nav>
-
-

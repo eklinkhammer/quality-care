@@ -89,6 +89,7 @@
     <script src="scripts/controllers/language_selection.js"></script>
     <script src="scripts/controllers/medical_history.js"></script>
     <script src="scripts/controllers/personal_info.js"></script>
+    <script src="scripts/controllers/privacy.js"></script>
     <!-- endbuild -->
   </body>
 </html>
