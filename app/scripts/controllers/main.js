@@ -17,6 +17,6 @@ angular.module('qualityCareApp')
     ];
   });
 
-function HeaderCtrl($scope) {
-  $scope.header = {name: "header.html", url: "header.html"};
-}
+//function HeaderCtrl($scope) {
+//  $scope.header = {name: "header.html", url: "header.html"};
+//}
