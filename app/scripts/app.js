@@ -54,6 +54,66 @@ angular
 		controller: 'PrivacyCtrl',
 		controllerAs: 'privacy'
 	    })
+	    .when('/demo/name', {
+		templateUrl: 'views/demo_name.html',
+		controller: 'DemoCtrl',
+		controllerAs: 'demo'
+	    })
+	    .when('/demo/misc', {
+		templateUrl: 'views/demo_misc.html',
+		controller: 'DemoCtrl',
+		controllerAs: 'demo'
+	    })
+	    .when('/demo/symptoms', {
+		templateUrl: 'views/demo_symptoms.html',
+		controller: 'DemoCtrl',
+		controllerAs: 'demo'
+	    })
+	    .when('/demo/locations', {
+		templateUrl: 'views/demo_locations.html',
+		controller: 'DemoCtrl',
+		controllerAs: 'demo'
+	    })
+	    .when('/demo/onset', {
+		templateUrl: 'views/demo_onset.html',
+		controller: 'DemoCtrl',
+		controllerAs: 'demo'
+	    })
+	    .when('/demo/description', {
+		templateUrl: 'views/demo_description.html',
+		controller: 'DemoCtrl',
+		controllerAs: 'demo'
+	    })
+	    .when('/demo/allergies', {
+		templateUrl: 'views/demo_allergies.html',
+		controller: 'DemoCtrl',
+		controllerAs: 'demo'
+	    })
+	    .when('/demo/medications', {
+		templateUrl: 'views/demo_medications.html',
+		controller: 'DemoCtrl',
+		controllerAs: 'demo'
+	    })
+	    .when('/demo/hazards', {
+		templateUrl: 'views/demo_hazards.html',
+		controller: 'DemoCtrl',
+		controllerAs: 'demo'
+	    })
+	    .when('/demo/relief', {
+		templateUrl: 'views/demo_relief.html',
+		controller: 'DemoCtrl',
+		controllerAs: 'demo'
+	    })
+	    .when('/demo/end', {
+		templateUrl: 'views/demo_end.html',
+		controller: 'DemoCtrl',
+		controllerAs: 'demo'
+	    })
+	    .when('/about', {
+		templateUrl: 'views/about.html',
+		controller: 'AboutCtrl',
+		controllerAs: 'about'
+	    })
 	    .otherwise({
 		redirectTo: '/'
 	    });
@@ -64,7 +124,7 @@ angular
 */
 
 // In nav bar, only most recently selected item is highlighted
-$(".nav a").on("click", function() {
-  $(".nav").find(".active").removeClass("active");
-  $(this).parent().addClass("active");
+$('.nav a').on('click', function() {
+  $('.nav').find('.active').removeClass('active');
+  $(this).parent().addClass('active');
 });

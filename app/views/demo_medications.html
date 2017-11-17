@@ -1,13 +1,15 @@
-<div>
-  <h2>What is your preferred language?</h2>
-</div>
-
+<h2>Are you currently taking any medications?</h2>
 <div class="form-group">
-  <select ng-init="language_selection.language = language_selection.languageOptions[0]"
-          ng-model="language_selection.language"
-          ng-options="option for option in language_selection.languageOptions"
-          class="form-control">
-  </select>
+  <label class="control-label">Filter:
+    <input ng-model="demo.filter" class="form-control">
+  </label>
+</div>
+<div class="pre-scrollable">
+  <div ng-repeat="key in demo.medicationNames | filter:demo.filter" class="form-check">
+    <label class="form-check-label">
+      <input type="checkbox" ng-model="demo.medications[key]" class="form-check-input"/> {{key}}
+    </label>
+  </div>
 </div>
 
 <nav class="navbar navbar-default" role="navigation">
@@ -22,7 +24,7 @@
       <li><a href="#">Restart</a></li>
     </ul>
     <ul class="nav navbar-nav navbar-right">
-      <li><a href="#!/demo/name">Begin</a></li>
+      <li><a href="#!/demo/hazards">Next</a></li>
     </ul>
   </div>
 </nav>
