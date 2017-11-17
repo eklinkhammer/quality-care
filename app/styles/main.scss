@@ -181,3 +181,38 @@ body {
 .navbar-toggle {
     z-index:3;
 }
+
+.form {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin-bottom: 5px;
+}
+
+.form .row {
+    margin-bottom: -15px;
+}
+.next {
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 4px;
+    width: 30%;
+    display: flex;
+    height: 100%;
+}
+
+.next:hover {
+    background-color: #45a049;
+}
+
+.navbar-nav navbar-right {
+    width: 100%;
+    display: inline-block;
+    text-align: center;
+    padding: 0;
+    list-style: none;
+    background-color: #f2f2f2;
+    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #ccc; 
+    margin-left: 0px;  // looks like bootstrap is putting a left margin on your #nav you may want it off.
+}

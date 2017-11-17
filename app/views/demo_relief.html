@@ -1,11 +1,13 @@
 <h2>Is there anything that relieves your symptoms?</h2>
+
+
 <div class="form-group">
   <label class="control-label">Filter:
     <input ng-model="demo.filter" class="form-control">
   </label>
 </div>
 <div class="pre-scrollable">
-  <div ng-repeat="key in demo.reliefNames | filter:demo.filter" class="form-check">
+  <div ng-controller="DemoCtrl" ng-repeat="key in demo.reliefNames | filter:demo.filter" class="form-check">
     <label class="form-check-label">
       <input type="checkbox" ng-model="demo.reliefs[key]" class="form-check-input"/> {{key}}
     </label>
@@ -23,7 +25,7 @@
     <ul class="nav navbar-nav navbar-left">
       <li><a href="#">Restart</a></li>
     </ul>
-    <ul class="nav navbar-nav navbar-right">
+    <ul class="nav navbar-nav navbar-right next">
       <li><a href="#!/demo/end">Next</a></li>
     </ul>
   </div>

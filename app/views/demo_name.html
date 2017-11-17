@@ -1,14 +1,45 @@
-<div class="row">
-  <div class="form-group col-sm-6">
-    <label for="firstName" class="control-label">First name:</label>
-    <input type="text" ng-model="demo.firstName" id="firstName" class="form-control"/>
+<h2> Personal Information </h2>
+<div class="form">
+  <div class="form row">
+    <label for="firstName" class="control-label">First Name</label>
+    <input type="text" ng-model="demo.firstName" id="firstName" class="form-control"
+	   placeholder="First Name" autofocus="autofocus"/>
   </div>
-  <div class="form-group col-sm-6">
-    <label for="lastName" class="control-label">Last Name:</label>
-    <input type="text" ng-model="demo.lastName" id="lastName" class="form-control"/>
+  <div class="form row">
+    <label for="lastName" class="control-label">Last Name</label>
+    <input type="text" ng-model="demo.lastName" id="lastName" class="form-control"
+	   placeholder="Last Name"/>
   </div>
 </div>
-
+<div class="form">
+  <div class="form-group">
+    <label for="address" class="control-label">Address:</label>
+    <input type="text" ng-model="demo.address" id="address" class="form-control"
+	   placeholder="Address"/>
+  </div>
+  <div class="row">
+    <div class="form-group col-sm-4">
+      <label for="city" class="control-label">City:</label>
+      <input type="text" ng-model="demo.city" id="city" class="form-control"
+	     placeholder="City"/>
+    </div>
+    <div class="form-group col-sm-4">
+      <label for="state" class="control-label">State:</label>
+      <input type="text" ng-model="demo.state" id="state" class="form-control"
+	     placeholder="State"/>
+    </div>
+    <div class="form-group col-sm-4">
+      <label for="zip" class="control-label">ZIP:</label>
+      <input type="text" ng-model="demo.zip" id="zip" class="form-control"
+	     placeholder="Zip Code"/>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="phone" class="control-label">Phone Number (H):</label>
+    <input type="text" ng-model="demo.phone" id="phone" class="form-control"
+	   placeholder="(XXX)-XXX-XXXX"/>
+  </div>
+</div>
 <nav class="navbar navbar-default" role="navigation">
   <div class="navbar-header">
     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -20,8 +51,8 @@
     <ul class="nav navbar-nav navbar-left">
       <li><a href="#">Restart</a></li>
     </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="#!/demo/misc">Next</a></li>
+    <ul class="nav navbar-nav navbar-right next">
+	<li><a href="#!/demo/symptoms">Next</a></li>
     </ul>
   </div>
 </nav>

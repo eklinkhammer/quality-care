@@ -1,19 +1,19 @@
 'use strict';
 
 angular.module('qualityCareApp')
-  .controller('DemoCtrl', function () {
+  .controller('DemoCtrl', function ($scope) {
     var i = 0;
 
     // demo_name.html
-    this.firstName = 'N/A';
-    this.lastName = 'N/A';
+    //this.firstName = 'N/A';
+    //this.lastName = 'N/A';
 
     // demo_misc.html
-    this.address = 'N/A';
-    this.city = 'N/A';
-    this.state = 'N/A';
-    this.zip = 'N/A';
-    this.phone = 'N/A';
+    //this.address = 'N/A';
+    //this.city = 'N/A';
+    //this.state = 'N/A';
+    //this.zip = 'N/A';
+    //this.phone = 'N/A';
 
     // demo_symptoms.html
     this.symptoms = {};
@@ -63,12 +63,12 @@ angular.module('qualityCareApp')
     }
 
     // demo_onset.html
-    this.onsetYear = 'N/A';
-    this.onsetMonth = 'N/A';
-    this.onsetDay = 'N/A';
-    this.onsetHour = 'N/A';
-    this.onsetMinute = 'N/A';
-    this.onsetSecond = 'N/A';
+    //this.onsetYear = 'N/A';
+    //this.onsetMonth = 'N/A';
+    //this.onsetDay = 'N/A';
+    //this.onsetHour = 'N/A';
+    //this.onsetMinute = 'N/A';
+    //this.onsetSecond = 'N/A';
 
     // demo_descriptions.html
     this.descriptions = {};
@@ -201,6 +201,11 @@ angular.module('qualityCareApp')
       var reliefName = this.reliefNames[i];
       this.reliefs[reliefName] = false;
     }
+
+      
+      $scope.relief = this.reliefs;
+      $scope.rkeys = this.reliefNames;
+      $scope.colors = {Blue : true, Orange : false};
   });
 
 //function HeaderCtrl($scope) {
